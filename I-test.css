@@ -1,0 +1,32 @@
+/*Michael Plemmons*/
+h1, h2, h3, div{
+  text-align: center;
+  font-family: Impact, Charcoal, sans-serif;
+}
+h1{
+  font-size: 4em;
+}
+h2{
+  font-size: 3em;
+}
+h3{
+  font-size:2em;
+}
+.test {
+  font-size: 2em;
+  margin-left: 20%;
+}
+body {
+  background-color: #7fff00;
+  color: DarkBlue;
+}
+a:hover{
+  color: black;
+}
+a{
+  font-size:7em;
+  text-decoration: none;
+  background-color: orange;
+  border-radius: 50px;
+  padding:20px;
+}
