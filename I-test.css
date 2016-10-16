@@ -23,10 +23,18 @@ body {
 a:hover{
   color: black;
 }
-a{
+
+a {
   font-size:7em;
   text-decoration: none;
   background-color: orange;
   border-radius: 50px;
   padding:20px;
+}
+a.advance{
+  font-size:3em;
+  text-decoration: none;
+  background-color: orange;
+  border-radius: 50px;
+  padding:10px;
 }
