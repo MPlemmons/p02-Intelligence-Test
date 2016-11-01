@@ -15,7 +15,8 @@ function q1_calc()
   else if (user == q1_answer){
     document.getElementById("output").innerHTML = user + " is correct!";
     document.getElementById("q1").value = "";
-    results_calc = Number(getCookie("results_acc")) + 1;
+    results_calc += 1;
+    setCookie("results_acc", results_calc);
   }
   else
   {
@@ -38,8 +39,8 @@ function q2_calc()
   else if (user == q2_answer){
     document.getElementById("output").innerHTML = user + " is correct!";
     document.getElementById("q2").value = "";
-    results_calc+=1;
-    results_calc = Number(getCookie("results_acc")) + 1;
+    results_calc += 1;
+    setCookie("results_acc", results_calc);
   }
   else
   {
@@ -61,8 +62,8 @@ function q3_calc()
   else if (user == q3_answer){
     document.getElementById("output").innerHTML = user + " is correct!";
     document.getElementById("q3").value = "";
-    results_calc+=1;
-    results_calc = Number(getCookie("results_acc")) + 1;
+    results_calc += 1;
+    setCookie("results_acc", results_calc);
   }
   else
   {
@@ -76,7 +77,6 @@ function results()
 {
   results_calc = Number(getCookie("results_acc"));
   document.getElementById("results").innerHTML = results_calc + "/3 correct";
-//  results_calc = 0;
 }
 
 //courtesy of w3schools, from: http://www.w3schools.com/js/js_cookies.asp
