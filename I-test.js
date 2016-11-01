@@ -37,7 +37,7 @@ function q2_calc()
   else if (user == q2_answer){
     document.getElementById("output").innerHTML = user + " is correct!";
     document.getElementById("q2").value = "";
-    var correct = getCookie("results_acc");
+    var correct = Number(getCookie("results_acc"));
     setCookie("results_acc", correct + 1, 100);
   }
   else
@@ -60,7 +60,7 @@ function q3_calc()
   else if (user == q3_answer){
     document.getElementById("output").innerHTML = user + " is correct!";
     document.getElementById("q3").value = "";
-    var correct = getCookie("results_acc");
+    var correct = Number(getCookie("results_acc"));
     setCookie("results_acc", correct + 1, 100);
   }
   else
