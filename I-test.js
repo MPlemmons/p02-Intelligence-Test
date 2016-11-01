@@ -75,6 +75,7 @@ function results()
 {
   results_calc = getCookie("results_acc");
   document.getElementById("results").innerHTML = results_calc + "/3 correct";
+  results_calc = 0;
 }
 
 //courtesy of w3schools, from: http://www.w3schools.com/js/js_cookies.asp
