@@ -1,6 +1,7 @@
 //Michael Plemmons
 var results_calc = 0;
 var user;
+setCookie("results_acc", results_calc);
 
 function q1_calc()
 {
@@ -15,7 +16,7 @@ function q1_calc()
     document.getElementById("output").innerHTML = user + " is correct!";
     document.getElementById("q1").value = "";
     results_calc+=1;
-    setCookie("results_acc", results_calc);
+  //  setCookie("results_acc", results_calc);
   }
   else
   {
@@ -39,7 +40,7 @@ function q2_calc()
     document.getElementById("output").innerHTML = user + " is correct!";
     document.getElementById("q2").value = "";
     results_calc+=1;
-    setCookie("results_acc", results_calc);
+    //setCookie("results_acc", results_calc);
   }
   else
   {
@@ -62,7 +63,7 @@ function q3_calc()
     document.getElementById("output").innerHTML = user + " is correct!";
     document.getElementById("q3").value = "";
     results_calc+=1;
-    setCookie("results_acc", results_calc);
+    //setCookie("results_acc", results_calc);
   }
   else
   {
