@@ -15,15 +15,14 @@ function q1_calc()
   else if (user == q1_answer){
     document.getElementById("output").innerHTML = user + " is correct!";
     document.getElementById("q1").value = "";
-    results_calc += 1;
-    setCookie("results_acc", results_calc);
+    setCookie("results_acc", results_calc + 1);
   }
   else
   {
     document.getElementById("output").innerHTML = user + " is incorrect. Try again or move onto "
     + "the next question.";
     document.getElementById("q1").value = "";
-
+    setCookie("results_acc", results_calc);
   }
 }
 
@@ -39,8 +38,8 @@ function q2_calc()
   else if (user == q2_answer){
     document.getElementById("output").innerHTML = user + " is correct!";
     document.getElementById("q2").value = "";
-    results_calc += 1;
-    setCookie("results_acc", results_calc);
+    results_calc = getCookie("results_acc");
+    setCookie("results_acc", results_calc + 1);
   }
   else
   {
@@ -62,8 +61,8 @@ function q3_calc()
   else if (user == q3_answer){
     document.getElementById("output").innerHTML = user + " is correct!";
     document.getElementById("q3").value = "";
-    results_calc += 1;
-    setCookie("results_acc", results_calc);
+    results_calc = getCookie("results_acc");
+    setCookie("results_acc", results_calc + 1);
   }
   else
   {
