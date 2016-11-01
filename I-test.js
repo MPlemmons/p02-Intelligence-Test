@@ -61,7 +61,7 @@ function q3_calc()
   else if (user == q3_answer){
     document.getElementById("output").innerHTML = user + " is correct!";
     document.getElementById("q3").value = "";
-    correct = getCookie("results_acc");
+    var correct = getCookie("results_acc");
     setCookie("results_acc", correct + 1);
   }
   else
