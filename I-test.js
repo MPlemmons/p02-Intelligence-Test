@@ -1,7 +1,6 @@
 //Michael Plemmons
 var results_calc = 0;
 var user;
-setCookie("results_acc", results_calc);
 
 function q1_calc()
 {
@@ -22,7 +21,7 @@ function q1_calc()
     document.getElementById("output").innerHTML = user + " is incorrect. Try again or move onto "
     + "the next question.";
     document.getElementById("q1").value = "";
-    setCookie("results_acc", results_calc);
+    setCookie("results_acc", results_calc, 100);
   }
 }
 
@@ -39,7 +38,7 @@ function q2_calc()
     document.getElementById("output").innerHTML = user + " is correct!";
     document.getElementById("q2").value = "";
     var correct = getCookie("results_acc");
-    setCookie("results_acc", correct + 1);
+    setCookie("results_acc", correct + 1, 100);
   }
   else
   {
@@ -62,7 +61,7 @@ function q3_calc()
     document.getElementById("output").innerHTML = user + " is correct!";
     document.getElementById("q3").value = "";
     var correct = getCookie("results_acc");
-    setCookie("results_acc", correct + 1);
+    setCookie("results_acc", correct + 1, 100);
   }
   else
   {
