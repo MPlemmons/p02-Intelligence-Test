@@ -1,6 +1,9 @@
 //Michael Plemmons
 var results_calc = 0;
 var user;
+var p1 = false;
+var p2 = false;
+var p3 = false;
 
 function q1_calc()
 {
@@ -14,14 +17,18 @@ function q1_calc()
   else if (user == q1_answer){
     document.getElementById("output").innerHTML = user + " is correct!";
     document.getElementById("q1").value = "";
-    setCookie("results_acc", results_calc + 1);
+    if(p1 == false)
+    {
+      setCookie("results_acc", results_calc + 1);
+      p1 = true;
+    }
   }
-  else
+    else
   {
     document.getElementById("output").innerHTML = user + " is incorrect. Try again or move onto "
     + "the next question.";
     document.getElementById("q1").value = "";
-    setCookie("results_acc", results_calc, 100);
+      setCookie("results_acc", results_calc);
   }
 }
 
@@ -37,8 +44,12 @@ function q2_calc()
   else if (user == q2_answer){
     document.getElementById("output").innerHTML = user + " is correct!";
     document.getElementById("q2").value = "";
-    results_calc = Number(getCookie("results_acc"));
-    setCookie("results_acc", results_calc + 1, 100);
+    if(p2 == false)
+      {
+        results_calc = Number(getCookie("results_acc"));
+        setCookie("results_acc", results_calc + 1);
+        p2 = true;
+      }
   }
   else
   {
@@ -60,8 +71,12 @@ function q3_calc()
   else if (user == q3_answer){
     document.getElementById("output").innerHTML = user + " is correct!";
     document.getElementById("q3").value = "";
-    results_calc = Number(getCookie("results_acc"));
-    setCookie("results_acc", results_calc + 1, 100);
+      if (p3 == false)
+        {
+          results_calc = Number(getCookie("results_acc"));
+          setCookie("results_acc", results_calc + 1);
+          p3 = true;
+        }
   }
   else
   {
